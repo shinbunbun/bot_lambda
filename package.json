@@ -1,0 +1,24 @@
+{
+  "name": "bot_lambda",
+  "version": "1.0.0",
+  "description": "以下の記事を元にbotを作成して下さい",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shinbunbun/bot_lambda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shinbunbun/bot_lambda/issues"
+  },
+  "homepage": "https://github.com/shinbunbun/bot_lambda#readme",
+  "dependencies": {
+    "@line/bot-sdk": "^6.7.1",
+    "crypto": "^1.0.1"
+  }
+}
