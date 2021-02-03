@@ -11,6 +11,9 @@ exports.handler = (event, context) => {
     //署名検証
     let signature = crypto.createHmac('sha256', process.env.CHANNELSECRET).update(event.body).digest('base64');
     let checkHeader = (event.headers || {})['X-Line-Signature'];
+    if(!checkHeader){
+        checkHeader = (event.headers || {})['x-line-signature'];
+    }
     let body = JSON.parse(event.body);
     const events = body.events;
     console.log(events);
